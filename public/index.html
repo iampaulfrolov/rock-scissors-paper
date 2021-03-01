@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Rock, Paper, Scissors</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="header">
+        <img src="../images/logo.svg" alt="logo" class="header-img">
+        <div class="header-score">
+          <p class="header-score__text">score</p>
+          <p class="header-score__count"></p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+   <div class="container">
+     <div class="main">
+       <button class="btn-circle btn-paper" data-choice="paper"><span class="wrapper"><img src="../images/icon-paper.svg" alt=""></span></button>
+       <button class="btn-circle btn-scissors" data-choice="scissors"><span class="wrapper"><img src="../images/icon-scissors.svg" alt=""></span></button>
+       <button class="btn-circle btn-rock" data-choice="rock"><span class="wrapper"><img src="../images/icon-rock.svg" alt=""></span></button>
+     </div>
+   </div>
+ </main>
+
+
+
+    <div class="selection">
+      <div class="selection-block">
+        <h2>You picked</h2>
+        <button class="btn-circle btn-paper pick" id="user"><span class="wrapper"><img src="../images/icon-paper.svg" alt=""></span></button>
+      </div>
+      <div class="selection-block selection-order">
+        <h1 class="selection-title" id="result"></h1>
+        <button class="btn btn-refresh">Play again</button>
+      </div>
+      <div class="selection-block">
+        <h2>The house picked</h2>
+        <button class="btn-circle btn-rock pick" id="pc"><span class="wrapper"><img src="../images/icon-rock.svg" alt=""></span></button>
+      </div>
+    </div>
+
+
+  <div class="modal"></div>
+  <section class="popup">
+    <div class="popup-box">
+      <div class="popup-title">rules</div>
+      <button class="popup-btn btn-close">
+        <img src="../images/icon-close.svg" alt="close">
+      </button>
+    </div>
+    <div class="popup-image">
+      <img src="../images/image-rules.svg" alt="">
+    </div>
+
+  </section>
+
+  <button class="btn btn-rules">rules</button>
+
+  <script src="./index.js"></script>
+</body>
+</html>
