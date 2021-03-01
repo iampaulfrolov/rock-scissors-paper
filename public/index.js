@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     el.classList.remove('btn-rock')
 
     el.classList.add(`btn-${choice}`)
-    el.querySelector('img').src = `./../images/icon-${choice}.svg`
+    el.querySelector('img').src = `images/icon-${choice}.svg`
   }
 
   const checkWinner = () => {
