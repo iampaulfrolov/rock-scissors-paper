@@ -10,7 +10,7 @@
     margin: 0 auto;
 }
 .main::before {
-    background-image: url('../../images/bg-triangle.svg');
+    background-image: url('../image/bg-triangle.svg');
     background-repeat: no-repeat;
     background-size: cover;
     content: '';
